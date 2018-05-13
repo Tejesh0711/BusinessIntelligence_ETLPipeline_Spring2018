@@ -1,0 +1,73 @@
+create shrunken tables, views, you can add tables and views if required to speed things up.
+
+currency in dw are US dollars
+
+Tunning Tips:
+
+1. Do overall JVM congif settings.
+2. Restrict SQL Server memory. (google it, keep an upper bound to 4-6Gb
+3. Commit/block - # of rows, block has to be a multiple of commit
+4. Parallelize the job itself (hit and try a lot) precedence correct, experiment wuth what happens at same time, split by SOR/database, split b 
+Do load balancing???? 
+5. Parallel executions on load. Note: cannot truncate.
+6. Avoid insert and update & do a lookup & if inner join then update if a "reject" insert row.
+7. Only query columns needed for load or lookup. Trim strings on inputs.
+8. DOnt use Cache
+9. no Tunite or Bulk Transforms.
+
+Tasks:
+
+1. Write queries for BI
+2. Truncate Tables in MySQL
+3. Create Connections in Talend
+4. Complete one BI Tool
+5. Start Talend
+6. Reverse Engineer DW and understand the DW
+
+
+?? 
+latitue geometry??
+
+need a crossmap file for dimproduct??
+
+Handling date
+row2.EndDate==null||row2.EndDate.toString().trim().length()==0?0 :1 
+
+Handling int to string
+String.valueOf(column)
+
+Handling float to decimal
+column.doubleValue()
+
+BigDecimal to Integer
+column.intValue()
+
+Long TO INTEGER
+column.intValue()
+
+
+Float to BigDecimal	
+BigDecimal.valueOf(Column)
+
+row1.BrandName.compareToIgnoreCase("A. Datum")==0 ? "adatm"+"0000"+SQLike.mid(row1.ProductLabel,5,3)  : row1.BrandName.compareToIgnoreCase("Litware")==0 ? "litwr"+"0000"+SQLike.mid(row1.ProductLabel,5,3)  : row1.BrandName.compareToIgnoreCase("Adventure Works")==0 ? "advwk"+"0000"+SQLike.mid(row1.ProductLabel,5,3) : row1.BrandName.compareToIgnoreCase("Southridge Video")==0 ? "svido"+"0000"+SQLike.mid(row1.ProductLabel,5,3)  : row1.BrandName.compareToIgnoreCase("Northwind Traders")==0 ? "ntrad"+"0000"+SQLike.mid(row1.ProductLabel,5,3)  : row1.BrandName.compareToIgnoreCase("Tailspin Toys")==0 ? "ttoys"+"0000"+SQLike.mid(row1.ProductLabel,5,3) : row1.BrandName.compareToIgnoreCase("The Phone Company")==0 ? "phoco"+"0000"+SQLike.mid(row1.ProductLabel,5,3)  : row1.BrandName.compareToIgnoreCase("Contoso")==0 ? "ctoso"+"0000"+SQLike.mid(row1.ProductLabel,5,3)  :row1.BrandName.compareToIgnoreCase("Wide World Importers")==0 ? "wwim"+"0000"+SQLike.mid(row1.ProductLabel,5,3)  :row1.BrandName.compareToIgnoreCase("Proseware")==0 ? "pware"+"0000"+SQLike.mid(row1.ProductLabel,5,3)  :row1.BrandName.compareToIgnoreCase("Fabrikam")==0 ? "fabrk"+"0000"+SQLike.mid(row1.ProductLabel,5,3)  : "0" 
+
+"0303050305025"
+row1.BrandName.substring(0,7) + row1.ProductLabel.substring(0,7)
+
+
+
+
+
+row1.QuotaDate.equals("null")?0 : Integer.parseInt(TalendDate.formatDate("yyyyMMdd", row1.QuotaDate )) 
+
+TalendDate.getCurrentDate()
+
+.multiply(row2.EndOfDayRate)
+
+row2.CurrencySK==7?(row1.ReturnAmount).multiply(row2.EndOfDayRate):row1.ReturnAmount 
+
+
+row2.EndOfDayRate == null ? row1.SALESAMOUNT:(row1.SALESAMOUNT).multiply(row2.EndOfDayRate)
+row2.EndOfDayRate == null ? row1.RETURNAMOUNT:(row1.RETURNAMOUNT).multiply(row2.EndOfDayRate) 
+row2.EndOfDayRate == null ? row1.DISCOUNTAMOUNT:(row1.DISCOUNTAMOUNT).multiply(row2.EndOfDayRate) 
+row2.EndOfDayRate == null ? row1.TOTALCOST:(row1.TOTALCOST).multiply(row2.EndOfDayRate) 

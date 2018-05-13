@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_gKkYQEjrEei7uKtlQoQ-xQ" name="DimChannel" dataPackage="_gKkYQUjrEei7uKtlQoQ-xQ _PPDgEEjwEei7uKtlQoQ-xQ _XF_nIEjwEei7uKtlQoQ-xQ" Server="Localhost 127.0.0.1" FilePath="C:/Users/Sameer/Documents/DWBI/SORFiles/DimChannel.csv" Format="WINDOWS" Encoding="windows-1252" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_gKkYQUjrEei7uKtlQoQ-xQ" name="default" dataManager="_gKkYQEjrEei7uKtlQoQ-xQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_gKkYQkjrEei7uKtlQoQ-xQ" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_vWzuYEjqEei7uKtlQoQ-xQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ZjlnwEjsEei7uKtlQoQ-xQ" label="ChannelKey" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ZjlnwUjsEei7uKtlQoQ-xQ" label="ChannelLabel" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ZjlnwkjsEei7uKtlQoQ-xQ" label="ChannelName" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Zjlnw0jsEei7uKtlQoQ-xQ" label="ChannelDescription" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ZjlnxEjsEei7uKtlQoQ-xQ" label="SOR_LoadDate" length="30" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_djrRsEjvEei7uKtlQoQ-xQ" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ZjlnxUjsEei7uKtlQoQ-xQ" label="SOR_UpdateDate" length="30" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ZjlnxkjsEei7uKtlQoQ-xQ" label="_No_column_name_" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Zjlnx0jsEei7uKtlQoQ-xQ" label="DI_Job_ID" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ZjlnyEjsEei7uKtlQoQ-xQ" label="DI_Create_Date" length="30" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ZjlnyUjsEei7uKtlQoQ-xQ" label="DI_Modified_date" length="30" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_PPDgEEjwEei7uKtlQoQ-xQ" name="default" dataManager="_gKkYQEjrEei7uKtlQoQ-xQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_PPDgEUjwEei7uKtlQoQ-xQ" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_Nhd84EjwEei7uKtlQoQ-xQ" label="metadata1">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PPDgEkjwEei7uKtlQoQ-xQ" label="ChannelKey" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PPDgE0jwEei7uKtlQoQ-xQ" label="ChannelLabel" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PPDgFEjwEei7uKtlQoQ-xQ" label="ChannelName" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PPDgFUjwEei7uKtlQoQ-xQ" label="ChannelDescription" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PPDgFkjwEei7uKtlQoQ-xQ" label="SOR_LoadDate" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PPDgF0jwEei7uKtlQoQ-xQ" label="SOR_UpdateDate" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PPDgGEjwEei7uKtlQoQ-xQ" label="_No_column_name_" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PPDgGUjwEei7uKtlQoQ-xQ" label="DI_Job_ID" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PPDgGkjwEei7uKtlQoQ-xQ" label="DI_Create_Date" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_PPDgG0jwEei7uKtlQoQ-xQ" label="DI_Modified_date" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_XF_nIEjwEei7uKtlQoQ-xQ" name="default" dataManager="_gKkYQEjrEei7uKtlQoQ-xQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_XF_nIUjwEei7uKtlQoQ-xQ" id="_TzIIMEjwEei7uKtlQoQ-xQ" label="CHannel">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XF_nIkjwEei7uKtlQoQ-xQ" label="ChannelKey" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XF_nI0jwEei7uKtlQoQ-xQ" label="ChannelLabel" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XF_nJEjwEei7uKtlQoQ-xQ" label="ChannelName" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XF_nJUjwEei7uKtlQoQ-xQ" label="ChannelDescription" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XF_nJkjwEei7uKtlQoQ-xQ" label="SOR_LoadDate" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XF_nJ0jwEei7uKtlQoQ-xQ" label="SOR_UpdateDate" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XF_nKEjwEei7uKtlQoQ-xQ" label="_No_column_name_" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XF_nKUjwEei7uKtlQoQ-xQ" label="DI_Job_ID" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XF_nKkjwEei7uKtlQoQ-xQ" label="DI_Create_Date" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XF_nK0jwEei7uKtlQoQ-xQ" label="DI_Modified_date" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
